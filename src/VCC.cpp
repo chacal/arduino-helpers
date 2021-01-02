@@ -13,6 +13,7 @@ int readRawVccMilliVolts(uint8_t pin, float adcRefVoltage, long r1, long r2) {
 
 
 #if defined(ARDUINO_ARCH_AVR)
+#include <util/delay.h>
 
 int readAtmegaInternalVcc() {
   // Read 1.1V reference against AVcc
